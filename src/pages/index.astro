@@ -1,50 +1,180 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="id">
 	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<BaseHead
+			title="Portofolio CV | Fajar Nugraha Yusman, M.M.Pd."
+			description="Landing page portofolio CV Fajar Nugraha Yusman, M.M.Pd., dosen, kepala LPPM, peneliti, dan entrepreneur retail kefarmasian."
+		/>
 	</head>
-	<body>
-		<Header />
+	<body class="portfolio-page">
+		<div class="cursor-glow" aria-hidden="true"></div>
+		<div class="aurora aurora-one"></div>
+		<div class="aurora aurora-two"></div>
+		<div class="sparkles" aria-hidden="true">
+			<span>✦</span><span>●</span><span>✧</span><span>◆</span><span>✺</span><span>✦</span>
+		</div>
+		<header class="hero-shell">
+			<nav class="portfolio-nav" aria-label="Navigasi utama">
+				<a class="brand magnetic" href="#hero" aria-label="Beranda Fajar Nugraha Yusman">
+					<span>FNY</span>
+					<strong>Fajar Nugraha Yusman</strong>
+				</a>
+				<div class="nav-links" role="list">
+					<a class="magnetic" href="#profil">Profil</a>
+					<a class="magnetic" href="#tab-navigasi">Tab CV</a>
+					<a class="magnetic" href="#karier">Karier</a>
+					<a class="magnetic" href="#timeline">Timeline</a>
+					<a class="magnetic" href="#karya">Karya</a>
+					<a class="nav-cta magnetic" href="#kontak">Kolaborasi</a>
+				</div>
+			</nav>
+
+			<section class="hero" id="hero">
+				<div class="hero-copy reveal-card">
+					<p class="eyebrow">Dosen • Peneliti • LPPM Leader • Entrepreneur</p>
+					<h1>Portofolio CV interaktif untuk akademisi visioner.</h1>
+					<p class="hero-lead">
+						Fajar Nugraha Yusman, M.M.Pd. memadukan kepemimpinan akademik, riset,
+						pengabdian masyarakat, pemasaran, sumber daya manusia, dan pengalaman bisnis
+						retail kefarmasian di Pamanukan, Subang.
+					</p>
+					<div class="hero-actions">
+						<a class="button primary magnetic" href="#tab-navigasi">Buka Tab CV</a>
+						<a class="button secondary magnetic" href="#timeline">Lihat Perjalanan</a>
+					</div>
+					<div class="quick-stats" aria-label="Ringkasan pencapaian">
+						<div><strong>2011</strong><span>Sarjana FKIP</span></div>
+						<div><strong>2016</strong><span>Magister Manajemen Pendidikan</span></div>
+						<div><strong>2018</strong><span>Founder usaha apotek</span></div>
+					</div>
+				</div>
+				<aside class="profile-card tilt-card" aria-label="Kartu profil Fajar Nugraha Yusman">
+					<div class="avatar-orbit">
+						<div class="avatar">FY</div>
+						<span class="orbit-dot dot-one"></span>
+						<span class="orbit-dot dot-two"></span>
+					</div>
+					<h2>Fajar Nugraha Yusman, M.M.Pd.</h2>
+					<p>Kepala LPPM STIE Miftahul Huda Subang</p>
+					<ul>
+						<li>📍 Rancasari, Pamanukan, Subang</li>
+						<li>🎓 Universitas Pasundan & Universitas Islam Nusantara</li>
+						<li>💡 Fokus: SDM, pemasaran, pendidikan</li>
+					</ul>
+				</aside>
+			</section>
+		</header>
+
 		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
+			<section class="section intro-grid reveal-card" id="profil">
+				<div class="section-heading">
+					<p class="eyebrow">Profil Personal</p>
+					<h2>Akademisi Subang dengan energi kontribusi yang luas.</h2>
+				</div>
+				<div class="glass-panel tilt-card">
+					<p>
+						Lahir di Subang pada 6 Maret 1989, Fajar adalah anak kedua dari dua
+						bersaudara, warga negara Indonesia, beragama Islam, dan berdomisili di Dusun
+						Rancasari, Desa Rancasari, Kecamatan Pamanukan, Kabupaten Subang.
+					</p>
+					<p>
+						Ia memiliki minat mendalam pada Sumber Daya Manusia dan Pemasaran, serta aktif
+						menulis jurnal dan artikel ilmiah untuk memberi dampak positif bagi pendidikan,
+						bangsa, dan negara.
+					</p>
+				</div>
+			</section>
+
+			<section class="section portfolio-tabs reveal-card" id="tab-navigasi" aria-labelledby="tab-heading">
+				<div class="section-heading center">
+					<p class="eyebrow">Tab Navigasi CV</p>
+					<h2 id="tab-heading">Pilih area portofolio tanpa mengubah website menjadi SPA.</h2>
+				</div>
+				<div class="tabs-shell">
+					<input checked type="radio" name="cv-tab" id="tab-ringkasan" />
+					<input type="radio" name="cv-tab" id="tab-pendidikan" />
+					<input type="radio" name="cv-tab" id="tab-struktural" />
+					<input type="radio" name="cv-tab" id="tab-bisnis" />
+					<input type="radio" name="cv-tab" id="tab-riset" />
+					<div class="tab-list" role="tablist" aria-label="Kategori CV">
+						<label class="magnetic" for="tab-ringkasan" role="tab">✨ Ringkasan</label>
+						<label class="magnetic" for="tab-pendidikan" role="tab">🎓 Pendidikan</label>
+						<label class="magnetic" for="tab-struktural" role="tab">🏛️ Struktural</label>
+						<label class="magnetic" for="tab-bisnis" role="tab">💊 Bisnis</label>
+						<label class="magnetic" for="tab-riset" role="tab">📚 Riset</label>
+					</div>
+					<div class="tab-panels">
+						<article class="tab-panel panel-ringkasan"><h3>Profil Singkat</h3><p>Dosen tetap STIE Miftahul Huda Subang yang aktif mengembangkan SDM, pemasaran, pendidikan, penelitian, dan pengabdian masyarakat.</p></article>
+						<article class="tab-panel panel-pendidikan"><h3>Jejak Pendidikan</h3><p>Sarjana FKIP Universitas Pasundan Bandung tahun 2011, kemudian Magister Manajemen Pendidikan Universitas Islam Nusantara Bandung tahun 2016.</p></article>
+						<article class="tab-panel panel-struktural"><h3>Kepemimpinan Kampus</h3><p>Pernah menjabat Sekretaris Program Studi Pascasarjana dan kini dipercaya menjadi Kepala LPPM STIE Miftahul Huda.</p></article>
+						<article class="tab-panel panel-bisnis"><h3>Entrepreneur Retail Kefarmasian</h3><p>Sejak 2018 menjalankan usaha retail kefarmasian berupa apotek di Pamanukan sebagai ruang praktik manajemen dan pelayanan.</p></article>
+						<article class="tab-panel panel-riset"><h3>Riset & Artikel Ilmiah</h3><p>Aktif menulis jurnal dan artikel ilmiah agar kontribusi akademik dapat memberi manfaat bagi pendidikan serta kemajuan bangsa.</p></article>
+					</div>
+				</div>
+			</section>
+
+			<section class="section feature-cards" id="karier" aria-label="Bidang keahlian">
+				<article class="feature-card pink tilt-card reveal-card"><span>01</span><h3>Pendidikan & Pengajaran</h3><p>Dosen tetap STIE Miftahul Huda Subang dengan fondasi FKIP dan manajemen pendidikan.</p></article>
+				<article class="feature-card yellow tilt-card reveal-card"><span>02</span><h3>Kepemimpinan Akademik</h3><p>Pernah menjadi Sekretaris Program Studi Pascasarjana dan kini memimpin LPPM.</p></article>
+				<article class="feature-card blue tilt-card reveal-card"><span>03</span><h3>Entrepreneurship</h3><p>Mengelola usaha retail kefarmasian apotek sejak 2018 di kawasan Pamanukan.</p></article>
+			</section>
+
+			<section class="section timeline-section reveal-card" id="timeline">
+				<div class="section-heading center"><p class="eyebrow">Timeline</p><h2>Perjalanan akademik dan profesional.</h2></div>
+				<div class="timeline">
+					<div class="timeline-item"><time>2011</time><p>Lulus Sarjana Fakultas Keguruan dan Ilmu Pendidikan, Universitas Pasundan Bandung.</p></div>
+					<div class="timeline-item"><time>2012–2016</time><p>Melanjutkan dan menyelesaikan Magister Manajemen Pendidikan di Universitas Islam Nusantara Bandung.</p></div>
+					<div class="timeline-item"><time>2018</time><p>Memulai usaha retail kefarmasian berupa apotek di Pamanukan.</p></div>
+					<div class="timeline-item"><time>Kini</time><p>Dosen tetap sekaligus Kepala LPPM STIE Miftahul Huda Subang.</p></div>
+				</div>
+			</section>
+
+			<section class="section impact reveal-card" id="karya">
+				<div><p class="eyebrow">Riset & Dampak</p><h2>Menulis, meneliti, dan mengabdi untuk kemajuan pendidikan.</h2></div>
+				<div class="impact-list">
+					<p>✨ Pengembangan penelitian kampus melalui LPPM.</p>
+					<p>🚀 Artikel ilmiah dan jurnal bertema pendidikan, SDM, dan pemasaran.</p>
+					<p>🤝 Pengabdian masyarakat yang menghubungkan kampus dengan kebutuhan lokal.</p>
+				</div>
+			</section>
+
+			<section class="section cta reveal-card" id="kontak">
+				<p class="eyebrow">Mari Berkolaborasi</p>
+				<h2>Siap membangun riset, pendidikan, dan inovasi yang lebih berdampak?</h2>
+				<a class="button primary magnetic" href="#hero">Kembali ke Profil</a>
+			</section>
 		</main>
 		<Footer />
+		<script>
+			const glow = document.querySelector('.cursor-glow');
+			const cards = document.querySelectorAll('.tilt-card');
+			document.addEventListener('pointermove', (event) => {
+				if (glow instanceof HTMLElement) {
+					glow.style.setProperty('--x', `${event.clientX}px`);
+					glow.style.setProperty('--y', `${event.clientY}px`);
+				}
+			});
+			cards.forEach((card) => {
+				card.addEventListener('pointermove', (event) => {
+					if (!(card instanceof HTMLElement) || !(event instanceof PointerEvent)) return;
+					const rect = card.getBoundingClientRect();
+					const x = ((event.clientX - rect.left) / rect.width - 0.5) * 10;
+					const y = ((event.clientY - rect.top) / rect.height - 0.5) * -10;
+					card.style.setProperty('--tilt-x', `${y}deg`);
+					card.style.setProperty('--tilt-y', `${x}deg`);
+				});
+				card.addEventListener('pointerleave', () => {
+					if (card instanceof HTMLElement) {
+						card.style.setProperty('--tilt-x', '0deg');
+						card.style.setProperty('--tilt-y', '0deg');
+					}
+				});
+			});
+		</script>
 	</body>
 </html>
